@@ -104,7 +104,7 @@ a:hover {
   height: 100%;
   width: 100%;
   background: #fff;
-  padding: 5px 5px;
+  padding: 20px 10px;
   margin: 0px auto;
 }
 @media screen and (max-width: 992px) {
@@ -138,7 +138,7 @@ a:hover {
   }
 }
 #header .alignleft h1 a {
-  font-family: "Calibri", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
+  font-family: "Segoe WP", "Segoe UI", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
 }
 #header .alignleft h1 a:hover {
   color: #009cdc;
@@ -155,7 +155,7 @@ a:hover {
   margin-top: 10px;
 }
 #header .alignleft h2 a {
-  font-family: "Calibri", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
+  font-family: "Segoe WP", "Segoe UI", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
 }
 #header #main-nav {
   font-family: 'Open Sans', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
@@ -969,7 +969,7 @@ article footer .article-nav .article-next {
 }
 #footer .alignleft {
   padding-top: 22px;
-  font-family: "Calibri", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
+  font-family: "Segoe WP", "Segoe UI", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-self;
 }
 #footer .alignright {
   padding: 15px 0;
