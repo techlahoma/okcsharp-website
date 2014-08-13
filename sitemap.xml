@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://techlahoma.github.io/okcsharp-website/2014/08/13/The-C-Group-Is-Back/</loc>
+    <lastmod>2014-08-13T16:58:37.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://techlahoma.github.io/okcsharp-website/code-of-conduct/index.html</loc>
     <lastmod>2014-08-13T08:23:13.000Z</lastmod>
   </url>
@@ -9,11 +14,6 @@
   <url>
     <loc>http://techlahoma.github.io/okcsharp-website/about/index.html</loc>
     <lastmod>2014-08-13T08:22:55.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://techlahoma.github.io/okcsharp-website/2014/08/13/The-C-Group-Is-Back/</loc>
-    <lastmod>2014-08-13T08:14:07.000Z</lastmod>
   </url>
   
 </urlset>
