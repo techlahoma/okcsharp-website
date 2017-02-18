@@ -13,7 +13,7 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
-- rsvp
+- meetup
 - signup
 - category
 - tag

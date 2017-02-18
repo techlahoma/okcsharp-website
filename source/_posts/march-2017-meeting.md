@@ -6,6 +6,7 @@ post_asset_folder: true
 showStarSpaceMap: true
 showPrototekMap: false
 showMeetupTime: true
+meetupEvent: 235939290
 ---
 
 ## TBD - Rainer Sigwald
