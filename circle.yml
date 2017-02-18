@@ -19,3 +19,7 @@ deployment:
 notify:
   webhooks:
     - url: https://damp-castle-3334.herokuapp.com/pr-build-completion
+general:
+  branches:
+    ignore:
+      - gh-pages
