@@ -8,6 +8,11 @@
     <% if (post.link || post.title){ %>
       <header class="article-header">
         <%- partial('post/title', {class_name: 'article-title'}) %>
+
+        <% if (post.meetupEvent){ %>
+          <a href="http://www.meetup.com/OKC-Sharp/events/<%- post.meetupEvent %>" data-event="<%- post.meetupEvent%>" class="mu-rsvp-btn">RSVP</a>
+        <% } %>
+
       </header>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
