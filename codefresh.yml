@@ -17,6 +17,7 @@ steps:
         image: node:4
         commands:
             - rm -rf node_modules/
+            - npm install
             - npm install -g hexo-cli --no-optional
             - git config --global user.name "The Code Putter"
             - git config --global user.email "thecodeputter@teapotcoder.com"
