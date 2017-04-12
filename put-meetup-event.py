@@ -85,7 +85,7 @@ def get_git_url(config_filename, path_to_git_setting):
 def commit_post(filename, git_url, message="Auto commit by thePutter", branch_name="master"):
     """Stages, commits, and pushes the created post"""
     if did_post_change(filename):
-        print "Post changed: %s, pushing it." % filename
+        print("Post changed: %s, pushing it." % filename)
         run(["git", "remote", "add", "putter", git_url])
         run(["git", "add", filename])
         run(["git", "commit", "-m", message])
@@ -94,7 +94,7 @@ def commit_post(filename, git_url, message="Auto commit by thePutter", branch_na
         # what sideeffects this may have. Something I'll look into.
         run(["git", "push", "putter", "HEAD:" + branch_name])
     else:
-        print "Post did NOT change: %s" % filename
+        print("Post did NOT change: %s" % filename)
 
 def did_post_change(filename):
     """Checks if the post filename changed or was created due to the generation process"""
