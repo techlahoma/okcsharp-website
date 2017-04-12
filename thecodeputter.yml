@@ -1,0 +1,14 @@
+# theCodePutter config
+meetup_root: "https://api.meetup.com"
+meetup_apikey: "PUT_KEY_HERE"
+group_name: "OKC-sharp"
+group_timezone: "US/Central"
+template_name: "meetup"
+posts_path: "source/_posts"
+
+# Config for committing new post to the repo and pushing.
+#
+posts_branch: "master"
+# Where to get the git url to push to.
+yaml_filename: "_config.yml"
+yaml_query: "deploy/repository"
