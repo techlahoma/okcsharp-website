@@ -14,7 +14,7 @@ steps:
                 all:
                     explicitlyRun: "'${{CF_BUILD_TRIGGER}}' == 'build'"
     deploy_site:
-        image: node:6
+        image: node:4
         commands:
             - rm -rf node_modules/
             - npm install -g hexo-cli --no-optional
