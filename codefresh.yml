@@ -16,7 +16,7 @@ steps:
     deploy_site:
         image: node:6
         commands:
-            - npm install -g hexo-cli
+            - npm install -g hexo-cli --no-optional
             - git config --global user.name "The Code Putter"
             - git config --global user.email "thecodeputter@teapotcoder.com"
             - sed -i'' "s~https://github.com/techlahoma/okcsharp-website.git~https://${GH_TOKEN}:x-oauth-basic@github.com/davidroberts63/okcsharp-website.git~" _config.yml
