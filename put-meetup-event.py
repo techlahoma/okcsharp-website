@@ -86,6 +86,7 @@ def commit_post(filename, git_url, message="Auto commit by thePutter", branch_na
     """Stages, commits, and pushes the created post"""
     if did_post_change(filename):
         print("Post changed: %s, pushing it." % filename)
+        run(["git", "remote", "rm", "putter"])
         run(["git", "remote", "add", "putter", git_url])
         run(["git", "add", filename])
         run(["git", "commit", "-m", message])
