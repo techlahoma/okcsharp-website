@@ -11,4 +11,6 @@ meetupEvent: swlthmywjbhb
 
 ## F# with Aaron Krauss
 
-<p>If you would like to give a talk at a future meeting, contact the group organizers through Meetup, email (<a href="mailto:organizers@okcsharp.net">organizers@okcsharp.net</a>), <a href="https://twitter.com/okcsharp">Twitter</a>, or the <a href="http://www.techlahoma.org/spaces">Techlahoma Slack</a>! </p> 
+<p>F# is a functional programming language that runs within the .NET framework. In this talk, we'll learn what it means to be a functional language and how F# ties this together with the rest of the .NET framework. Everything will be live-coded, so you'll get to see exactly how things work as they're coded out. This talk is very beginner friendly to both functional and .NET development alike - so come join us!</p> <p>
+
+Aaron Krauss is a developer at Clevyr where he builds data-driven applications in Ruby, Javascript, Shell, and anything else awesome. He also blogs regularly, enjoys craft beer, has a cool dog, and has been dating someone for over 10 years.</p> 
