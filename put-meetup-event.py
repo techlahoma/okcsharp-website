@@ -15,6 +15,7 @@ from pytz import timezone
 import pytz
 import reyaml
 import requests
+import anemetrohexo
 
 class Event(object):
     """Represents the MeetUp event"""
@@ -60,23 +61,6 @@ def get_next_event(api_key, api_root, group_name):
     event = Event(venue_name=data["venue"]["name"], **data)
     return event
 
-def generate_post_filename(event):
-    """Generates the filename for the event's post"""
-    return event.when.strftime("%B-%Y-meetup.md").lower()
-
-def get_template_path(template_name):
-    """Get the path to the template file that will be copied"""
-    return os.path.join("./scaffolds", template_name + ".md")
-
-def process_placeholders(filename, event):
-    """Returns processing the placeholders in the filename with values from the event"""
-    content = ""
-    values = event.__dict__
-    with open(filename, mode="r") as post_file:
-        for line in post_file:
-            content += line.format(**values)
-    return content
-
 def get_git_url(config_filename, path_to_git_setting):
     """Reads the git url from the given yaml config file"""
     config = reyaml.load_from_file(config_filename)
@@ -102,7 +86,7 @@ def did_post_change(filename):
     status = run(["git", "status", "-s"], stdout=PIPE, universal_newlines=True).stdout
     lines = status.split("\n")
     if " M %s" % filename in lines or "?? %s" % filename in lines:
-        return True
+        return False
     else:
         return False
 
@@ -110,11 +94,11 @@ def generate_post(template, destination_folder, event):
     """Generates event post file"""
 
     # Create initial post from template
-    file_name = generate_post_filename(event)
+    file_name = anemetrohexo.generate_post_filename(event)
     full_filename = destination_folder + "/" + file_name
     copyfile(template, full_filename)
 
-    content = process_placeholders(full_filename, event)
+    content = anemetrohexo.process_placeholders(full_filename, event)
 
     # Saving processed content
     with open(full_filename, mode="w") as post_file:
@@ -132,7 +116,7 @@ def putt():
     config = get_putter_config()
     event = get_next_event(config["meetup_apikey"], config["meetup_root"], config["group_name"])
     event.set_timezone(timezone(config["group_timezone"]))
-    template_path = get_template_path(config["template_name"])
+    template_path = anemetrohexo.get_template_path(config["template_name"])
     post_filename = generate_post(template_path, config["posts_path"], event)
 
     git_url = get_git_url(config["yaml_filename"], config["yaml_query"])
