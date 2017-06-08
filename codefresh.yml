@@ -1,14 +1,14 @@
 version: "1.0"
 steps:
-    get_version:
+    get_latest_meetup:
         image: python:latest
         commands:
-            - git config --global user.name "The Code Putter"
-            - git config --global user.email "thecodeputter@teapotcoder.com"
+            - git config --global user.name "AneMetro"
+            - git config --global user.email "anemetro@teapotcoder.com"
             - sed -i'' "s~https://github.com/techlahoma/okcsharp-website.git~https://${GH_TOKEN}:x-oauth-basic@github.com/techlahoma/okcsharp-website.git~" _config.yml
-            - sed -i'' "s~PUT_KEY_HERE~${MEETUP_TOKEN}~" thecodeputter.yml
-            - pip install -r pypackages.txt
-            - python put-meetup-event.py
+            - sed -i'' "s~PUT_KEY_HERE~${MEETUP_TOKEN}~" anemetro.yml
+            - pip install anemetro
+            - anemetro-pull
         when:
             condition:
                 all:
@@ -19,8 +19,8 @@ steps:
             - rm -rf node_modules/
             - npm install
             - npm install -g hexo-cli --no-optional
-            - git config --global user.name "The Code Putter"
-            - git config --global user.email "thecodeputter@teapotcoder.com"
+            - git config --global user.name "AneMetro"
+            - git config --global user.email "anemetro@teapotcoder.com"
             - sed -i'' "s~https://github.com/techlahoma/okcsharp-website.git~https://${GH_TOKEN}:x-oauth-basic@github.com/techlahoma/okcsharp-website.git~" _config.yml
             - rm -rf .deploy_git/
             - hexo clean
