@@ -11,4 +11,4 @@ meetupEvent: swlthmywkbfb
 
 ## Lightning Talks
 
-<p>If you would like to give a 5-15 minute lightning talk, contact the group organizers through <a href="https://www.meetup.com/OKC-Sharp/">Meetup</a>, email (<a href="mailto:organizers@okcsharp.net">organizers@okcsharp.net</a>), <a href="https://twitter.com/okcsharp">Twitter</a>, or the <a href="http://www.techlahoma.org/spaces">Techlahoma Slack</a>!</p> <p>This is a great way to give your first talk without the pressure of preparing a longer presentation!</p> 
+<p>This month's speakers are:</p> <p>• Caitlin Stewart</p> <p>• Chase Pritchett</p> <p>• Dale Spoonemore</p> <p>• Steven Fletcher</p> <p>Can't make it to this meetup in person? Watch it on <a href="https://www.twitch.tv/techlahoma">Twitch</a>!</p> <p><br/>If you would like to give a talk at a future meetup, contact the group organizers through <a href="https://www.meetup.com/OKC-Sharp/">Meetup</a>, email (<a href="mailto:organizers@okcsharp.net">organizers@okcsharp.net</a>), <a href="https://twitter.com/okcsharp">Twitter</a>, or the <a href="http://www.techlahoma.org/spaces">Techlahoma Slack</a>.</p> 
